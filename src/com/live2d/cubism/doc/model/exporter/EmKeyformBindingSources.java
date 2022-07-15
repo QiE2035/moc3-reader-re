@@ -19,13 +19,13 @@ public final class EmKeyformBindingSources {
 
 
     /* renamed from: a */
-    public List<Integer> m23822a() {
+    public List<Integer> getKeysSourcesBeginIndex() {
         return this.mKeysSourcesBeginIndex;
     }
 
 
     /* renamed from: b */
-    public List<Integer> m23820b() {
+    public List<Integer> getKeysSourcesCount() {
         return this.mKeysSourcesCount;
     }
 

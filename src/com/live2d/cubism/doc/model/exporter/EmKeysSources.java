@@ -15,7 +15,7 @@ public final class EmKeysSources {
 
 
     /* renamed from: a */
-    public List<Float> m23789a() {
+    public List<Float> getKey() {
         return this.key;
     }
 

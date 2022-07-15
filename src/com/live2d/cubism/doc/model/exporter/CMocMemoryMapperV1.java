@@ -24,7 +24,7 @@ public final class CMocMemoryMapperV1 {
 
         list.add(new MocMemoryMapCountInfoEntry());
         list.add(new MocMemoryCanvasInfoEntry());
-
+        // EmPartSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1346E.INSTANCE, 2));
         list.add(new MocMemoryMapIdEntry(C1358Q.INSTANCE));
         list.add(new MocMemoryMapArrayDataEntry(0, C1395ab.INSTANCE, 1));
@@ -33,7 +33,7 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1376aI.INSTANCE, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1387aT.INSTANCE, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1444be.INSTANCE, 1));
-
+        // EmDeformerSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1455bp.INSTANCE, 2));
         list.add(new MocMemoryMapIdEntry(C1347F.f3518a));
         list.add(new MocMemoryMapArrayDataEntry(0, C1349H.f3520a, 1));
@@ -43,23 +43,23 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1353L.f3524a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1354M.f3525a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1355N.f3526a, 1));
-
+        // getEmWarpDeformerSpecificSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1356O.f3527a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1357P.f3528a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1359R.f3530a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1360S.f3531a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1361T.f3532a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1362U.f3533a, 1));
-
+        // getEmRotationDeformerSpecificSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1363V.f3534a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1364W.f3535a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1365X.f3536a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1366Y.f3537a, 1));
+        // getEmArtMeshSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1367Z.f3538a, 2));
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1394aa.f3568a, 2));
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1396ac.f3570a, 2));
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1397ad.f3571a, 2));
-
         list.add(new MocMemoryMapIdEntry(C1398ae.f3572a));
         list.add(new MocMemoryMapArrayDataEntry(0, C1399af.INSTANCE, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1400ag.f3574a, 1));
@@ -76,7 +76,7 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1412as.f3586a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1413at.f3587a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1414au.f3588a, 1));
-
+        // getEmParameterSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1415av.f3589a, 2));
         list.add(new MocMemoryMapIdEntry(C1416aw.f3590a));
         list.add(new MocMemoryMapArrayDataEntry(0, C1418ay.f3592a, 1));
@@ -86,12 +86,12 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1370aC.f3544a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1371aD.f3545a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1372aE.f3546a, 1));
-
+        // getEmPartKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1373aF.f3547a, 1));
-
+        // getEmWarpDeformerKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1374aG.f3548a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1375aH.f3549a, 1));
-
+        // getEmRotationDeformerKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1377aJ.f3551a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1378aK.f3552a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1379aL.f3553a, 1));
@@ -99,18 +99,18 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1381aN.f3555a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1382aO.f3556a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1383aP.f3557a, 1));
-
+        // getEmArtMeshKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1384aQ.f3558a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1385aR.f3559a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1386aS.f3560a, 1));
-
+        // getEmKeyformPositionSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1388aU.f3562a, 1));
-
+        // getEmKeyformBindingIndexSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1389aV.f3563a, 1));
-
+        // getEmKeyformBindingBandSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1390aW.f3564a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1391aX.f3565a, 1));
-
+        // getEmKeyformBindingBandSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1392aY.f3566a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1393aZ.f3567a, 1));
 

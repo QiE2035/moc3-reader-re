@@ -16,7 +16,7 @@ final class EmDrawOrderGroupItemTypeWriter extends Lambda implements Function2<C
         super();
     }
 
-    @Override // kotlin.jvm.functions.Function2
+    @Override
     public /* synthetic */ void invoke(CBinaryWriter bVar, EmDrawOrderGroupItemType bNVar) {
         m23946a(bVar, bNVar);
     }

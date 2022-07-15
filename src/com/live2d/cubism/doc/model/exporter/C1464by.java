@@ -20,7 +20,7 @@ final class C1464by extends Lambda implements Function1<EmMoc3Source, List<Short
 
     /* renamed from: a */
     public List<Short> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         type = Short.TYPE;
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(21);
         return receiver.getEmModelSource().getEmGlueInfoSources().getPositionIndex();

@@ -24,7 +24,7 @@ final class C1415av extends Lambda implements Function1<EmMoc3Source, Integer> {
 
     /* renamed from: a */
     public int m23971a(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         return receiver.getEmModelSource().getEmParameterSources().getSize();
     }
 }

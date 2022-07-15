@@ -24,7 +24,7 @@ final class C1394aa extends Lambda implements Function1<EmMoc3Source, Integer> {
 
     /* renamed from: a */
     public int m23992a(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         return receiver.getEmModelSource().getEmArtMeshSources().getSize();
     }
 }

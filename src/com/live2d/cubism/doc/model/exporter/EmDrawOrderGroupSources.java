@@ -31,13 +31,13 @@ public final class EmDrawOrderGroupSources {
 
 
     /* renamed from: a */
-    public List<Integer> getDrawOrderGroupObjectSourcesCount() {
+    public List<Integer> getDrawOrderGroupObjectSourcesBeginIndex() {
         return this.mDrawOrderGroupObjectSourcesBeginIndex;
     }
 
 
     /* renamed from: b */
-    public List<Integer> getDrawOrderGroupObjectSourcesBeginIndex() {
+    public List<Integer> getDrawOrderGroupObjectSourcesCount() {
         return this.mDrawOrderGroupObjectSourcesCount;
     }
 

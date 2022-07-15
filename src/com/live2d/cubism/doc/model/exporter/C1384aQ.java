@@ -20,7 +20,7 @@ final class C1384aQ extends Lambda implements Function1<EmMoc3Source, List<Float
 
     /* renamed from: a */
     public List<Float> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         type = Float.TYPE;
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(9);
         return receiver.getEmModelSource().getEmArtMeshKeyformSources().getOpacity();

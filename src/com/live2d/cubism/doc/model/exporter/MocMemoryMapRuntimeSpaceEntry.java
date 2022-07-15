@@ -20,7 +20,7 @@ final class MocMemoryMapRuntimeSpaceEntry extends ACMocMemoryMapEntry {
     /* JADX WARN: Multi-variable type inference failed */
     public MocMemoryMapRuntimeSpaceEntry(int i, int i2, Function1<EmMoc3Source, Integer> getSourceFunc) {
         super(i2);
-        //Intrinsics.checkParameterIsNotNull(getSourceFunc, "getSourceFunc");
+
         this.mUnitSize = i;
         this.mGetSourceFunc = getSourceFunc;
     }

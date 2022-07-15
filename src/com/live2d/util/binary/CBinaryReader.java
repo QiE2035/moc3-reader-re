@@ -1,7 +1,5 @@
 package com.live2d.util.binary;
 
-import kotlin.jvm.internal.Intrinsics;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -20,11 +18,8 @@ public final class CBinaryReader {
     private boolean isLittelEndian;
 
     public CBinaryReader(byte[] bytes) {
-        Intrinsics.checkParameterIsNotNull(bytes, "bytes");
         /* renamed from: a */
-        ByteBuffer wrap = ByteBuffer.wrap(bytes);
-        Intrinsics.checkExpressionValueIsNotNull(wrap, "ByteBuffer.wrap(_rawBuf)");
-        this.mBuffer = wrap;
+        this.mBuffer = ByteBuffer.wrap(bytes);
         this.isLittelEndian = true;
         setLittleEndian(true);
     }

@@ -20,7 +20,7 @@ final class C1450bk extends Lambda implements Function1<EmMoc3Source, List<EmDra
 
     /* renamed from: a */
     public List<EmDrawOrderGroupItemType> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         type = EmDrawOrderGroupItemType.class;
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(19);
         return receiver.getEmModelSource().getEmDrawOrderGroupObjectSources().getType();

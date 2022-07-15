@@ -34,13 +34,13 @@ public final class EmRotationDeformerSpecificSources {
 
 
     /* renamed from: b */
-    public List<Integer> getKeyformSourcesCount() {
+    public List<Integer> getKeyformSourcesBeginIndex() {
         return this.mKeyformSourcesBeginIndex;
     }
 
 
     /* renamed from: c */
-    public List<Integer> getKeyformSourcesBeginIndex() {
+    public List<Integer> getKeyformSourcesCount() {
         return this.mKeyformSourcesCount;
     }
 

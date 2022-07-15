@@ -20,8 +20,8 @@ final class C1371aD extends Lambda implements Function1<EmMoc3Source, List<Integ
 
     /* renamed from: a */
     public List<Integer> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(5);
-        return receiver.getEmModelSource().getEmParameterSources().m23741g();
+        return receiver.getEmModelSource().getEmParameterSources().getKeyformBindingSourcesBeginIndex();
     }
 }

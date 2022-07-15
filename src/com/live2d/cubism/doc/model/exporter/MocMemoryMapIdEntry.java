@@ -22,7 +22,7 @@ final class MocMemoryMapIdEntry extends ACMocMemoryMapEntry {
     /* JADX WARN: Multi-variable type inference failed */
     public MocMemoryMapIdEntry(Function1<EmMoc3Source, List<String>> getSourceFunc) {
         super(0, 1);
-        //Intrinsics.checkParameterIsNotNull(getSourceFunc, "getSourceFunc");
+
         this.mGetSourceFunc = getSourceFunc;
     }
 

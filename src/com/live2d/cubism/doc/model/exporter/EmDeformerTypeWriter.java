@@ -16,7 +16,7 @@ final class EmDeformerTypeWriter extends Lambda implements Function2<CBinaryWrit
         super();
     }
 
-    @Override // kotlin.jvm.functions.Function2
+    @Override
     public /* synthetic */ void invoke(CBinaryWriter bVar, EmDeformerType bMVar) {
         m23947a(bVar, bMVar);
     }

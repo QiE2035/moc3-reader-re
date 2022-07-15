@@ -79,13 +79,13 @@ public final class EmParameterSources {
 
 
     /* renamed from: g */
-    public List<Integer> m23741g() {
+    public List<Integer> getKeyformBindingSourcesBeginIndex() {
         return this.mKeyformBindingSourcesBeginIndex;
     }
 
 
     /* renamed from: h */
-    public List<Integer> m23740h() {
+    public List<Integer> getKeyformBindingSourcesCount() {
         return this.mKeyformBindingSourcesCount;
     }
 

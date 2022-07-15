@@ -20,7 +20,7 @@ final class C1408ao extends Lambda implements Function1<EmMoc3Source, List<Byte>
 
     /* renamed from: a */
     public List<Byte> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         type = Byte.TYPE;
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(4);
         return receiver.getEmModelSource().getEmArtMeshSources().getDrawableFlag();

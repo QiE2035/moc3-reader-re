@@ -51,13 +51,13 @@ public final class EmPartSources {
 
 
     /* renamed from: c */
-    public List<Integer> getKeyformSourcesCount() {
+    public List<Integer> getKeyformSourcesBeginIndex() {
         return this.mKeyformSourcesBeginIndex;
     }
 
 
     /* renamed from: d */
-    public List<Integer> getKeyformSourcesBeginIndex() {
+    public List<Integer> getKeyformSourcesCount() {
         return this.mKeyformSourcesCount;
     }
 

@@ -20,7 +20,7 @@ final class MocMemoryMapArrayDataEntry<T> extends ACMocMemoryMapEntry {
     /* JADX WARN: Multi-variable type inference failed */
     public MocMemoryMapArrayDataEntry(int align, Function1<EmMoc3Source, List<T>> getSourceFunc) {
         super(align);
-        //Intrinsics.checkParameterIsNotNull(getSourceFunc, "getSourceFunc");
+
         this.mGetSourceFunc = getSourceFunc;
     }
 

@@ -15,7 +15,7 @@ public final class EmKeyformBindingIndexSources {
 
 
     /* renamed from: a */
-    public List<Integer> m23825a() {
+    public List<Integer> getKeyformBindingSourcesIndex() {
         return this.mKeyformBindingSourcesIndex;
     }
 

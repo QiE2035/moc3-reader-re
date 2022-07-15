@@ -3,7 +3,6 @@ package com.live2d.util.binary;
 //import kotlin.Metadata;
 
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
@@ -32,9 +31,7 @@ public final class CBinaryWriter {
     private boolean f20553e = true;
 
     public CBinaryWriter() {
-        ByteBuffer wrap = ByteBuffer.wrap(this.f20551c);
-        Intrinsics.checkExpressionValueIsNotNull(wrap, "ByteBuffer.wrap(_buf)");
-        this._tmpBuf = wrap;
+        this._tmpBuf = ByteBuffer.wrap(this.f20551c);
         m8598a(true);
     }
 
@@ -99,11 +96,7 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public void writeAnsiString(String value, boolean z) {
-        //Intrinsics.checkParameterIsNotNull(value, "value");
-        byte[] bytes;
-        bytes = value.getBytes(StandardCharsets.UTF_8);
-        Intrinsics.checkExpressionValueIsNotNull(bytes, "(this as java.lang.String).getBytes(charset)");
-        for (byte b : bytes) {
+        for (byte b : value.getBytes(StandardCharsets.UTF_8)) {
             write(b);
         }
         if (z) {
@@ -113,7 +106,6 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public void write(Object value) {
-        //Intrinsics.checkParameterIsNotNull(value, "value");
         if (value instanceof Byte) {
             writeU1(((Number) value).byteValue());
         } else if (value instanceof Short) {
@@ -140,7 +132,7 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public void writeArrayU1(byte[] values) {
-        //Intrinsics.checkParameterIsNotNull(values, "values");
+
         for (byte b : values) {
             writeU1(b);
         }
@@ -148,7 +140,7 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public <T> void writeArray(List<? extends T> values) {
-        //Intrinsics.checkParameterIsNotNull(values, "values");
+
         for (T t : values) {
             write(t);
         }
@@ -174,9 +166,7 @@ public final class CBinaryWriter {
 
     /* renamed from: b */
     public byte[] toByteArray() {
-        byte[] byteArray = this._bout.toByteArray();
-        Intrinsics.checkExpressionValueIsNotNull(byteArray, "_bout.toByteArray()");
-        return byteArray;
+        return this._bout.toByteArray();
     }
 
 

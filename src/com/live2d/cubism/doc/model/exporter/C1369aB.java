@@ -20,7 +20,7 @@ final class C1369aB extends Lambda implements Function1<EmMoc3Source, List<Boole
 
     /* renamed from: a */
     public List<Boolean> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(5);
         type = Boolean.TYPE;
         return receiver.getEmModelSource().getEmParameterSources().getRepeat();

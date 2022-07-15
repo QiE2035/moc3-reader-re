@@ -20,7 +20,7 @@ final class C1354M extends Lambda implements Function1<EmMoc3Source, List<EmDefo
 
     /* renamed from: a */
     public List<EmDeformerType> invoke(EmMoc3Source receiver) {
-        //Intrinsics.checkParameterIsNotNull(receiver, "$receiver");
+
         type = EmDeformerType.class;
         count = receiver.getEmModelSource().getEmCountInfo().getCounts().get(1);
         return receiver.getEmModelSource().getEmDeformerSources().getDeformerType();

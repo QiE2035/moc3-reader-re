@@ -86,13 +86,13 @@ public final class EmArtMeshSources {
 
 
     /* renamed from: c */
-    public List<Integer> getKeyformSourcesCount() {
+    public List<Integer> getKeyformSourcesBeginIndex() {
         return this.mKeyformSourcesBeginIndex;
     }
 
 
     /* renamed from: d */
-    public List<Integer> getKeyformSourcesBeginIndex() {
+    public List<Integer> getKeyformSourcesCount() {
         return this.mKeyformSourcesCount;
     }
 
@@ -134,7 +134,7 @@ public final class EmArtMeshSources {
 
 
     /* renamed from: k */
-    public List<Integer> getPositionIndexSourcesBeginIndex() {
+    public List<Integer> getPositionIndexSourcesCount() {
         return this.mPositionIndexSourcesCount;
     }
 
@@ -146,7 +146,7 @@ public final class EmArtMeshSources {
 
 
     /* renamed from: m */
-    public List<Integer> getPositionIndexSourcesCount() {
+    public List<Integer> getPositionIndexSourcesBeginIndex() {
         return this.mPositionIndexSourcesBeginIndex;
     }
 
@@ -158,13 +158,13 @@ public final class EmArtMeshSources {
 
 
     /* renamed from: o */
-    public List<Integer> getDrawableMaskSourcesCount() {
+    public List<Integer> getDrawableMaskSourcesBeginIndex() {
         return this.mDrawableMaskSourcesBeginIndex;
     }
 
 
     /* renamed from: p */
-    public List<Integer> getDrawableMaskSourcesBeginIndex() {
+    public List<Integer> getDrawableMaskSourcesCount() {
         return this.mDrawableMaskSourcesCount;
     }
 

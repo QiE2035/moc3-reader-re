@@ -55,13 +55,13 @@ public final class EmGlueSources {
 
 
     /* renamed from: c */
-    public List<Integer> getKeyformSourcesCount() {
+    public List<Integer> getKeyformSourcesBeginIndex() {
         return this.mKeyformSourcesBeginIndex;
     }
 
 
     /* renamed from: d */
-    public List<Integer> getKeyformSourcesBeginIndex() {
+    public List<Integer> getKeyformSourcesCount() {
         return this.mKeyformSourcesCount;
     }
 
@@ -79,13 +79,13 @@ public final class EmGlueSources {
 
 
     /* renamed from: g */
-    public List<Integer> getGlueInfoSourcesCount() {
+    public List<Integer> getGlueInfoSourcesBeginIndex() {
         return this.mGlueInfoSourcesBeginIndex;
     }
 
 
     /* renamed from: h */
-    public List<Integer> getGlueInfoSourcesBeginIndex() {
+    public List<Integer> getGlueInfoSourcesCount() {
         return this.mGlueInfoSourcesCount;
     }
 
