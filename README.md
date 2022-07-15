@@ -1,16 +1,17 @@
 # moc3-reader-re
 
-A moc3 file reader by reverse the Live2D Cubism.
+moc3 file reader by reversing Live2D Cubism
 
-## Feature
+## Features
 
-- Read moc3 file with possibly correct structure.
-    - (some names maybe wrong)
-- Write back moc3 file.
-    - (need to clear the `offset list` before)
+- Read moc3 files in possibly correct structure.
+  - (some names may be wrong)
+- Write back moc3 files.
+  - (need to clear `offset list` first)
 
 ## TODO
 
-- [ ] Tidy the code.
-- [ ] rename some name.
-- [ ] ~~Reverse to the cmo3 file.~~
+- [ ] Cleaned up code and renamed some names.
+- [ ] moc3 file structure analysis information.
+- [ ] Rewritten in Kotlin.
+- [ ] ~~Reverse to cmo3 file.~~
