@@ -11,7 +11,7 @@ import java.util.List;
 final class C1347F extends Lambda implements Function1<EmMoc3Source, List<String>> {
 
     /* renamed from: a */
-    public static final C1347F f3518a = new C1347F();
+    public static final C1347F INSTANCE = new C1347F();
 
 
     C1347F() {

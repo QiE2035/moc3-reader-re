@@ -11,7 +11,7 @@ import java.util.List;
 final class C1350I extends Lambda implements Function1<EmMoc3Source, List<Boolean>> {
 
     /* renamed from: a */
-    public static final C1350I f3521a = new C1350I();
+    public static final C1350I INSTANCE = new C1350I();
 
 
     C1350I() {

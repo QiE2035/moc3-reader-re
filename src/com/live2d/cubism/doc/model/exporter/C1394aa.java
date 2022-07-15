@@ -19,12 +19,9 @@ final class C1394aa extends Lambda implements Function1<EmMoc3Source, Integer> {
 
     @Override // kotlin.jvm.functions.Function1
     public /* synthetic */ Integer invoke(EmMoc3Source cbVar) {
-        return m23992a(cbVar);
+
+        return cbVar.getEmModelSource().getEmArtMeshSources().getSize();
     }
 
     /* renamed from: a */
-    public int m23992a(EmMoc3Source receiver) {
-
-        return receiver.getEmModelSource().getEmArtMeshSources().getSize();
-    }
 }

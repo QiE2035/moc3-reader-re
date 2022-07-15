@@ -24,34 +24,34 @@ public final class CBinaryWriter {
     private final ByteArrayOutputStream _bout = new ByteArrayOutputStream();
 
     /* renamed from: c */
-    private final byte[] f20551c = new byte[8];
+    private final byte[] byteArr = new byte[8];
     /* renamed from: f */
-    private final Map<Class<?>, Function2<CBinaryWriter, Object>> f20554f = new HashMap<>();
+    private final Map<Class<?>, Function2<CBinaryWriter, Object>> writeFuns = new HashMap<>();
     /* renamed from: e */
-    private boolean f20553e = true;
+    private boolean littleEndian = true;
 
     public CBinaryWriter() {
-        this._tmpBuf = ByteBuffer.wrap(this.f20551c);
-        m8598a(true);
+        this._tmpBuf = ByteBuffer.wrap(this.byteArr);
+        setLittleEndian(true);
     }
 
     /* renamed from: a */
-    public static /* synthetic */ void doWriteAnsiString(CBinaryWriter bVar, String str, boolean z, int i) {
+    public static /* synthetic */ void doWriteAnsiString(CBinaryWriter writer, String str, boolean endZero, int i) {
         if ((i & 2) != 0) {
-            z = false;
+            endZero = false;
         }
-        bVar.writeAnsiString(str, z);
+        writer.writeAnsiString(str, endZero);
     }
 
     /* renamed from: a */
-    public void m8598a(boolean z) {
-        this.f20553e = z;
-        m8593d();
+    public void setLittleEndian(boolean z) {
+        this.littleEndian = z;
+        setEndian();
     }
 
     /* renamed from: d */
-    private void m8593d() {
-        this._tmpBuf.order(this.f20553e ? ByteOrder.LITTLE_ENDIAN : ByteOrder.BIG_ENDIAN);
+    private void setEndian() {
+        this._tmpBuf.order(this.littleEndian ? ByteOrder.LITTLE_ENDIAN : ByteOrder.BIG_ENDIAN);
     }
 
     /* renamed from: a */
@@ -63,43 +63,43 @@ public final class CBinaryWriter {
     public void writeU1(byte b) {
         this._tmpBuf.position(0);
         this._tmpBuf.put(b);
-        this._bout.write(this.f20551c, 0, 1);
+        this._bout.write(this.byteArr, 0, 1);
     }
 
     /* renamed from: a */
     public void writeU2(short s) {
         this._tmpBuf.position(0);
         this._tmpBuf.putShort(s);
-        this._bout.write(this.f20551c, 0, 2);
+        this._bout.write(this.byteArr, 0, 2);
     }
 
     /* renamed from: a */
     public void writeU4(int i) {
         this._tmpBuf.position(0);
         this._tmpBuf.putInt(i);
-        this._bout.write(this.f20551c, 0, 4);
+        this._bout.write(this.byteArr, 0, 4);
     }
 
     /* renamed from: a */
     public void writeU4(float f) {
         this._tmpBuf.position(0);
         this._tmpBuf.putFloat(f);
-        this._bout.write(this.f20551c, 0, 4);
+        this._bout.write(this.byteArr, 0, 4);
     }
 
     /* renamed from: a */
-    public void writeU8(long j) {
+    public void writeU8(long l) {
         this._tmpBuf.position(0);
-        this._tmpBuf.putLong(j);
-        this._bout.write(this.f20551c, 0, 8);
+        this._tmpBuf.putLong(l);
+        this._bout.write(this.byteArr, 0, 8);
     }
 
     /* renamed from: a */
-    public void writeAnsiString(String value, boolean z) {
+    public void writeAnsiString(String value, boolean endZero) {
         for (byte b : value.getBytes(StandardCharsets.UTF_8)) {
             write(b);
         }
-        if (z) {
+        if (endZero) {
             write(0);
         }
     }
@@ -121,7 +121,7 @@ public final class CBinaryWriter {
         } else if (value instanceof Boolean) {
             writeU4((Boolean) value ? 1 : 0);
         } else {
-            Function2<CBinaryWriter, Object> function2 = this.f20554f.get(value.getClass());
+            Function2<CBinaryWriter, Object> function2 = this.writeFuns.get(value.getClass());
             if (function2 != null) {
                 function2.invoke(this, value);
             } else {
@@ -132,7 +132,6 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public void writeArrayU1(byte[] values) {
-
         for (byte b : values) {
             writeU1(b);
         }
@@ -140,7 +139,6 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public <T> void writeArray(List<? extends T> values) {
-
         for (T t : values) {
             write(t);
         }
@@ -181,7 +179,7 @@ public final class CBinaryWriter {
 
     /* renamed from: a */
     public <T> void addwriteFunction(Class<?> clazz, Function2<? super CBinaryWriter, ? super T> func) {
-        this.f20554f.put(clazz, (Function2) func);
+        this.writeFuns.put(clazz, (Function2) func);
     }
 
 

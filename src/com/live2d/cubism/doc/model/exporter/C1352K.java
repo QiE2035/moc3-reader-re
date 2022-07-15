@@ -11,7 +11,7 @@ import java.util.List;
 final class C1352K extends Lambda implements Function1<EmMoc3Source, List<Integer>> {
 
     /* renamed from: a */
-    public static final C1352K f3523a = new C1352K();
+    public static final C1352K INSTANCE = new C1352K();
 
 
     C1352K() {

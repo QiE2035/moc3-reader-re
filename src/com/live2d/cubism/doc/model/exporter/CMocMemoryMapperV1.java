@@ -35,14 +35,14 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1444be.INSTANCE, 1));
         // EmDeformerSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1455bp.INSTANCE, 2));
-        list.add(new MocMemoryMapIdEntry(C1347F.f3518a));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1349H.f3520a, 1));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1350I.f3521a, 1));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1351J.f3522a, 1));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1352K.f3523a, 1));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1353L.f3524a, 1));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1354M.f3525a, 1));
-        list.add(new MocMemoryMapArrayDataEntry(0, C1355N.f3526a, 1));
+        list.add(new MocMemoryMapIdEntry(C1347F.INSTANCE));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1349H.INSTANCE, 1));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1350I.INSTANCE, 1));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1351J.INSTANCE, 1));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1352K.INSTANCE, 1));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1353L.INSTANCE, 1));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1354M.INSTANCE, 1));
+        list.add(new MocMemoryMapArrayDataEntry(0, C1355N.INSTANCE, 1));
         // EmWarpDeformerSpecificSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1356O.f3527a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1357P.f3528a, 1));
@@ -110,14 +110,14 @@ public final class CMocMemoryMapperV1 {
         // EmKeyformBindingBandSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1390aW.f3564a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1391aX.f3565a, 1));
-        // EmKeyformBindingBandSources
+        // EmKeyformBindingSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1392aY.f3566a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1393aZ.f3567a, 1));
         // EmKeysSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1440ba.f3747a, 1));
         // EmUvSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1441bb.f3748a, 1));
-        // EmCountInfo
+        // EmPositionIndexSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1442bc.f3749a, 1));
         // EmDrawableMaskSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1443bd.f3750a, 1));
