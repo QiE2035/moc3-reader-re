@@ -21,7 +21,7 @@ public final class CMocMemoryMapperV1 {
     private void initializeMemoryMap(CMocExportFormat cMocExportFormat) {
         this.mModelSourceMemoryMap.clear();
         List<ACMocMemoryMapEntry> list = this.mModelSourceMemoryMap;
-
+        // list.add
         list.add(new MocMemoryMapCountInfoEntry());
         list.add(new MocMemoryCanvasInfoEntry());
         // EmPartSources
@@ -43,19 +43,19 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1353L.f3524a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1354M.f3525a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1355N.f3526a, 1));
-        // getEmWarpDeformerSpecificSources
+        // EmWarpDeformerSpecificSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1356O.f3527a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1357P.f3528a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1359R.f3530a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1360S.f3531a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1361T.f3532a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1362U.f3533a, 1));
-        // getEmRotationDeformerSpecificSources
+        // EmRotationDeformerSpecificSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1363V.f3534a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1364W.f3535a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1365X.f3536a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1366Y.f3537a, 1));
-        // getEmArtMeshSources
+        // EmArtMeshSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1367Z.f3538a, 2));
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1394aa.f3568a, 2));
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1396ac.f3570a, 2));
@@ -76,7 +76,7 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1412as.f3586a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1413at.f3587a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1414au.f3588a, 1));
-        // getEmParameterSources
+        // EmParameterSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1415av.f3589a, 2));
         list.add(new MocMemoryMapIdEntry(C1416aw.f3590a));
         list.add(new MocMemoryMapArrayDataEntry(0, C1418ay.f3592a, 1));
@@ -86,12 +86,12 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1370aC.f3544a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1371aD.f3545a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1372aE.f3546a, 1));
-        // getEmPartKeyformSources
+        // EmPartKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1373aF.f3547a, 1));
-        // getEmWarpDeformerKeyformSources
+        // EmWarpDeformerKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1374aG.f3548a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1375aH.f3549a, 1));
-        // getEmRotationDeformerKeyformSources
+        // EmRotationDeformerKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1377aJ.f3551a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1378aK.f3552a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1379aL.f3553a, 1));
@@ -99,39 +99,39 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1381aN.f3555a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1382aO.f3556a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1383aP.f3557a, 1));
-        // getEmArtMeshKeyformSources
+        // EmArtMeshKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1384aQ.f3558a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1385aR.f3559a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1386aS.f3560a, 1));
-        // getEmKeyformPositionSources
+        // EmKeyformPositionSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1388aU.f3562a, 1));
-        // getEmKeyformBindingIndexSources
+        // EmKeyformBindingIndexSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1389aV.f3563a, 1));
-        // getEmKeyformBindingBandSources
+        // EmKeyformBindingBandSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1390aW.f3564a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1391aX.f3565a, 1));
-        // getEmKeyformBindingBandSources
+        // EmKeyformBindingBandSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1392aY.f3566a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1393aZ.f3567a, 1));
-
+        // EmKeysSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1440ba.f3747a, 1));
-
+        // EmUvSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1441bb.f3748a, 1));
-
+        // EmCountInfo
         list.add(new MocMemoryMapArrayDataEntry(0, C1442bc.f3749a, 1));
-
+        // EmDrawableMaskSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1443bd.f3750a, 1));
-
+        // EmDrawOrderGroupSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1445bf.f3752a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1446bg.f3753a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1447bh.f3754a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1448bi.f3755a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1449bj.f3756a, 1));
-
+        // EmDrawOrderGroupObjectSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1450bk.f3757a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1451bl.f3758a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1452bm.f3759a, 1));
-
+        // EmGlueSources
         list.add(new MocMemoryMapRuntimeSpaceEntry(8, 0, C1453bn.f3760a, 2));
         list.add(new MocMemoryMapIdEntry(C1454bo.f3761a));
         list.add(new MocMemoryMapArrayDataEntry(0, C1456bq.f3763a, 1));
@@ -141,12 +141,12 @@ public final class CMocMemoryMapperV1 {
         list.add(new MocMemoryMapArrayDataEntry(0, C1460bu.f3767a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1461bv.f3768a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1462bw.f3769a, 1));
-
+        // EmGlueInfoSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1463bx.f3770a, 1));
         list.add(new MocMemoryMapArrayDataEntry(0, C1464by.f3771a, 1));
-
+        // EmGlueKeyformSources
         list.add(new MocMemoryMapArrayDataEntry(0, C1465bz.f3772a, 1));
-
+        // EmAdditional33Sources
         if (cMocExportFormat.getSDKVersion() >= CMocExportFormat.V3_03_00.getSDKVersion()) {
             list.add(new MocMemoryMapArrayDataEntry(0, C1348G.f3519a, 1));
         }
