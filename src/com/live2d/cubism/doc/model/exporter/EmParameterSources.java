@@ -91,7 +91,7 @@ public final class EmParameterSources {
 
     /* renamed from: i */
     public int getSize() {
-        return this.mID.size();
+        return this.getID().size();
     }
 
 

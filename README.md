@@ -12,6 +12,6 @@ moc3 file reader by reversing Live2D Cubism
 ## TODO
 
 - [ ] Cleaned up code and renamed some names.
-- [ ] moc3 file structure analysis information.
+- [x] moc3 file structure analysis information.
 - [ ] Rewritten in Kotlin.
 - [ ] ~~Reverse to cmo3 file.~~

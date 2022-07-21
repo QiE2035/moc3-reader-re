@@ -1,0 +1,214 @@
+- align = 64B
+- SIZE -> Byte
+- space -> 8B
+- String -> 64B
+- Boolean -> Int
+    = value == 1
+
+Header
+    - SIZE = 64
+    MAGIC = "MOC3"
+    format: Byte
+        - enum
+            V3_00 = 1
+            V3_03 = 2
+            V4_00 = 3
+    endian: Byte
+        - ByteOrder
+            LITTLE_ENDIAN = 0
+            BIG_ENDIAN = 1
+
+Offsets
+    - SIZE = 640
+    offsets: List<Int>
+
+// - SIZE = 1984
+
+Counts
+    - COUNT = 23
+    - SIZE = 128
+    counts: List<Int>
+
+Canvas
+    - SIZE = 64
+    pixelsPerUnit: Float
+    originX: Float
+    originY: Float
+    width: Float
+    height: Float
+    flag: Byte
+
+Parts
+    - count = counts[0]
+            = id.size
+    space = count
+    id: List<String>
+    keyformBindingBandIndex: List<Int>
+    keyformIndex: List<Int>
+    keyformCount: List<Int>
+    visible: List<Boolean>
+    enable: List<Boolean>
+    parentIndex: List<Int>
+    
+Deformers
+    - count = counts[1]
+            = id.size
+    space = count
+    id: List<String>
+    keyformBindingBandIndex: List<Int>
+    visible: List<Boolean>
+    enable: List<Boolean>
+    parentPartIndex: List<Int>
+    parentIndex: List<Int>
+    type: List<DeformerType>
+        - enum -> Int
+            WARP = 0
+            ROTATION = 1
+    specificIndex: List<Int>
+
+WarpDeformers
+    - count = counts[2]
+    keyformBindingBandIndex: List<Int>
+    keyformIndex: List<Int>
+    keyformCount: List<Int>
+    vertexCount: List<Int>
+    row: List<Int>
+    col: List<Int>
+
+RotationDeformers
+    - count = counts[3]
+    keyformBindingBandIndex: List<Int>
+    keyformIndex: List<Int>
+    keyformCount: List<Int>
+    baseAngle: List<Float>
+
+ArtMeshes
+    - count = counts[4]
+    space = 4 * count
+    id: List<String>
+    keyformBindingBandIndex: List<Int>
+    keyformIndex: List<Int>
+    keyformCount: List<Int>
+    visible: List<Boolean>
+    enable: List<Boolean>
+    parentPartIndex: List<Int>
+    parentDeformerIndex: List<Int>
+    texture: List<Int>
+    drawableFlag: List<Byte>
+    positionCount: List<Int>
+    uvIndex: List<Int>
+    positionIndex: List<Int>
+    vertexCount: List<Int>
+    drawableMaskIndex: List<Int>
+    drawableMaskCount: List<Int>
+
+Parameters
+    - count = counts[5]
+    space = count
+    id: List<String>
+    maxValue: List<Float>
+    minValue: List<Float>
+    defaultValue: List<Float>
+    isRepeat: List<Boolean>
+    decimalPlaces: List<int>
+    keyformBindingIndex = List<Int>
+    keyformBindingCount = List<Int>
+
+PartKeyforms
+    - count = counts[6]
+    drawOrder: List<Float>
+
+WarpDeformerKeyforms
+    - count = counts[7]
+    opacity: List<Int>
+    KeyformPositionIndex: List<Int>
+
+RotationDeformerKeyforms
+    - count = counts[8]
+    opacity: List<Float>
+    angle: List<Float>
+    originX: List<Float>
+    originY: List<Float>
+    scale: List<Float>
+    reflectX: List<Boolean>
+    reflectY: List<Boolean>
+
+ArtMeshKeyforms
+    - count = counts[9]
+    opacity: List<Float>
+    drawOrder: List<Float>
+    KeyformPositionIndex = List<Int>
+
+KeyformPositions
+    - count = counts[10]
+    xy: List<Float>
+
+KeyformBindingIndexes
+    - count = counts[11]
+    keyformBindingIndex: List<Int>
+
+KeyformBindingBands
+    - count = counts[12]
+    keyformBindingIndex: List<Int>
+    keyformBindingCount: List<Int>
+
+KeyformBindings
+    - count = counts[13]
+    keysIndex: List<Int>
+    keysCount: List<Int>
+
+Keys
+    - count = counts[14]
+    keys: List<Float>
+
+UVs
+    - count = counts[15]
+    xy: List<Float>
+
+PositionIndexes
+    - count = counts[16]
+    index: List<Short>
+
+DrawableMasks
+    - count = counts[17]
+    artMeshIndex: List<Int>
+
+DrawOrderGroups
+    - count = counts[18]
+    objectIndex: List<Int>
+    objectCount: List<Int>
+    objectTotalCount: List<Int>
+    minDrawOrder: List<Int>
+    maxDrawOrder: List<Int>
+
+DrawOrderGroupsObject
+    - count = counts[19]
+    type: List<DrawOrderGroupItemType>
+        - enum -> Int
+            ARTMESH = 0
+            PART = 1
+    index: List<Int>
+    groupIndex: List<Int>
+
+Glues
+    - count = counts[20]
+    space = count
+    keyformBindingBandIndex: List<Int>
+    keyformIndex: List<Int>
+    keyformCount: List<Int>
+    artMeshIndexA: List<Int>
+    artMeshIndexB: List<Int>
+    GlueInfoIndex: List<Int>
+    GlueInfoCount: List<Int>
+
+GluesInfo
+    - count = counts[21]
+    weight: List<Float>
+    positionIndex: List<Short>
+
+GlueKeyforms
+    - count = counts[22]
+    intensity: List<Float>
+
+Additional33
+    quadTransform: List<Boolean>
