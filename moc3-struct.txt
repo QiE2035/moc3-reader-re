@@ -1,5 +1,5 @@
 - align = 64B
-- SIZE -> Byte
+- SIZE -> B
 - space -> 8B
 - String -> 64B
 - Boolean -> Int
